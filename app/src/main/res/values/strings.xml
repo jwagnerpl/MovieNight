@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MovieNight</string>
+    <string name="minimum_rating">Minimum Rating</string>
+    <string name="minimum_ratings">Minimum Votes</string>
+    <string name="from_date_optional">From Date (Optional)</string>
+    <string name="to_date_optional">To Date (Optional)</string>
+    <string name="submit">Submit</string>
+    <string name="hint">Submit</string>
+    <string-array name="genre_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+</resources>
