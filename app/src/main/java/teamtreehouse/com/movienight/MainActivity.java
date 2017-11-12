@@ -66,7 +66,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public String getTvURL(String fromDate, String toDate, String genre, int minRating, int minQuantityRatings, String sortBy) {
-        return "https://api.themoviedb.org/3/discover/tv?api_key=522918123e54a751b7b0cff5708774ac&language=en-US&sort_by=" + sortBy + "&air_date.gte=" + fromDate + "&air_date.lte=" + toDate + "&page=1&timezone=America%2FNew_York&vote_average.gte=" + minRating + "&vote_count.gte=" + minQuantityRatings + "&with_genres=" + genre + "&include_null_first_air_dates=false";
+
+        Log.i(TAG, "https://api.themoviedb.org/3/discover/tv?api_key=522918123e54a751b7b0cff5708774ac&language=en-US&sort_by=" + sortBy + "&first_air_date.gte=" + fromDate + "&first_air_date.lte=" + toDate + "&page=1&timezone=America%2FNew_York&vote_average.gte="
+                + minRating + "&vote_count.gte=" + minQuantityRatings + "&with_genres=" + genre + "&include_null_first_air_dates=false");
+        return "https://api.themoviedb.org/3/discover/tv?api_key=522918123e54a751b7b0cff5708774ac&language=en-US&sort_by=" + sortBy + "&first_air_date.gte=" + fromDate + "&first_air_date.lte=" + toDate + "&page=1&timezone=America%2FNew_York&vote_average.gte="
+                + minRating + "&vote_count.gte=" + minQuantityRatings + "&with_genres=" + genre + "&include_null_first_air_dates=false";
     }
 
     @BindView(R.id.genresSelectedTextView)
